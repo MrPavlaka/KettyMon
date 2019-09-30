@@ -1,0 +1,29 @@
+// Showcase Section
+#showcase {
+    background: url('../img/showcase-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: $primary-color-overlay-light;
+        z-index: -1;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+}
