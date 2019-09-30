@@ -411,16 +411,22 @@ body {
   margin: 0 auto; }
 
 .btn {
-  background: #333333;
+  background: #b67d30;
+  color: #fff;
+  border-radius: 5px;
   display: inline-block;
   padding: 1rem 1.2rem;
-  cursor: pointer; }
+  border: 2px solid #b67d30;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none; }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+.btn:hover {
+  background: #fff;
+  color: #333333;
+  transition: all 0.2s ease-in; }
+
+h1 {
   font-family: 'Pacifico', cursive; }
 
 h1 {
@@ -587,3 +593,25 @@ header {
     flex-direction: column;
     height: 100%; }
 
+#showcase-content {
+  background: #eeeeee; }
+  #showcase-content .container .flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px dotted #333333; }
+    #showcase-content .container .flex-wrapper .flex-item {
+      width: 100%; }
+    #showcase-content .container .flex-wrapper .flex-item:first-child {
+      margin-bottom: 2rem; }
+    #showcase-content .container .flex-wrapper .flex-item img {
+      width: 100%; }
+    #showcase-content .container .flex-wrapper .flex-item .text-wrapper {
+      width: 100%;
+      text-align: center; }
+      #showcase-content .container .flex-wrapper .flex-item .text-wrapper h2,
+      #showcase-content .container .flex-wrapper .flex-item .text-wrapper p {
+        margin-bottom: 1rem; }
+      #showcase-content .container .flex-wrapper .flex-item .text-wrapper .btn {
+        margin-top: 1rem; }
+  #showcase-content .container .flex-wrapper:last-child {
+    border-bottom: none; }
