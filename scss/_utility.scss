@@ -9,14 +9,28 @@ body {
 }
 
 .btn {
-    background: $primary-color;
+    background: $secondary-color;
+    color: $primary-text-white;
+    border-radius: 5px;
     display: inline-block;
     padding: 1rem 1.2rem;
+    border: 2px solid $secondary-color;
     cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-h1
- {
+.btn:hover {
+    background: $primary-text-white;
+    color: $primary-color;
+    transition: $transition-ease-in-2;
+}
+
+
+
+h1,
+    {
+
     font-family: 'Pacifico', cursive;
 }
 

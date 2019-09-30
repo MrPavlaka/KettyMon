@@ -27,3 +27,47 @@
         height: 100%;
     }
 }
+
+// Showcase content 
+#showcase-content {
+    background: $primary-background;
+
+    .container {
+
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 2px dotted $primary-color;
+
+            .flex-item {
+                width: 100%;
+            }
+
+            .flex-item:first-child {
+                margin-bottom: 2rem;
+            }
+
+            .flex-item img {
+                width: 100%;
+            }
+
+            .flex-item .text-wrapper {
+                width: 100%;
+                text-align: center;
+
+                h2,
+                p {
+                    margin-bottom: 1rem;
+                }
+
+                .btn {
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .flex-wrapper:last-child {
+            border-bottom: none;
+        }
+    }
+}
