@@ -19,11 +19,14 @@ background: $dark-background-overlay;
 z-index: -2;
 }
 .container {
+  height: 100%;
 z-index: 3;
 display: flex;
 justify-content: flex-end;
 
+
 .flex-wrapper {
+  height: fit-content;
   background: #537d91;
   padding: 3rem;
   box-shadow: 5px 20px 30px #537d91;
@@ -32,9 +35,33 @@ justify-content: flex-end;
 }
 
 .flex-item {
-  padding: 1rem 0;
+  padding: 2rem;
+  display: flex;
+  
+ i{
+   margin-right: .5rem;
+ }
+
+ a {
+   color: white;
+   text-decoration: none;
+ }
    
  }
+}
+.copyright {
+  background-color: black;
+  padding-left: 80px;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .social-pos {
+    margin-right: 50px;
+    padding: 5px;
+  }
 }
 }
 
