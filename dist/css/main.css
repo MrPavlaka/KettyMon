@@ -402,6 +402,9 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
+body {
+  font-family: 'Lato', sans-serif; }
+
 .container {
   width: 80%;
   max-width: 1920px;
@@ -412,6 +415,13 @@ textarea {
   display: inline-block;
   padding: 1rem 1.2rem;
   cursor: pointer; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Pacifico', cursive; }
 
 h1 {
   font-size: 3rem; }
@@ -515,3 +525,65 @@ footer {
       flex-direction: column; }
     footer .container .flex-item {
       padding: 1rem 0; }
+
+#main-menu {
+  padding: 2rem 0;
+  background: #333333;
+  border-bottom: 1px dotted #eeeeee; }
+  #main-menu .container ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    #main-menu .container ul li {
+      border-bottom: 1px dotted rgba(238, 238, 238, 0.9); }
+      #main-menu .container ul li a {
+        padding: .5rem 0;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: rgba(238, 238, 238, 0.9); }
+      #main-menu .container ul li a:hover {
+        color: #fff;
+        transition: all 0.2s ease-in; }
+    #main-menu .container ul li:last-child {
+      border-bottom: none; }
+
+header {
+  background: #333333; }
+  header .container nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center; }
+    header .container nav .logo {
+      width: 20%; }
+      header .container nav .logo img {
+        width: 80px; }
+    header .container nav #menu-icon {
+      color: #fff; }
+
+#showcase {
+  background: url("../img/showcase-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+  z-index: 1; }
+  #showcase::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(238, 238, 238, 0.8);
+    z-index: -1; }
+  #showcase .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%; }
+
