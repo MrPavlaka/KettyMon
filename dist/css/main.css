@@ -426,6 +426,11 @@ body {
   color: #333333;
   transition: all 0.2s ease-in; }
 
+.active {
+  background: #b67d30;
+  color: #fff;
+  border-radius: 5px; }
+
 h1 {
   font-family: 'Pacifico', cursive; }
 
