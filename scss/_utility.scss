@@ -26,7 +26,11 @@ body {
     transition: $transition-ease-in-2;
 }
 
-
+.active {
+    background: $secondary-color;
+    color: $primary-text-white;
+    border-radius: 5px;
+}
 
 h1 {
     font-family: 'Pacifico', cursive;
