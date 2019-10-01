@@ -46,7 +46,10 @@
     <header class="py-1">
       <div class="container">
         <nav>
-          <div class="logo"></div>
+          <div class="logo">
+              <img src="img/logo.png" alt="">
+
+          </div>
           <i
             class="fas fa-bars fa-2x"
             id="menu-icon"
@@ -59,78 +62,63 @@
     <!-- Section 1: Showcase -->
     <section id="showcase">
       <div class="container">
-        <h1>Dobrodosli</h1>
+        <h1>Kontakt</h1>
       </div>
     </section>
 
     <!-- Footer -->
    
     <footer class="py-2">
-          <div class="container">
-              <div class="container-contact100">
-                  <div class="wrap-contact100">
-                    <form class="contact100-form validate-form">
-                      <span class="contact100-form-title">
-                        Kontaktirajte nas
-                      </span>
-                      <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                        <input class="input100" type="text" name="email" placeholder="Email">
-                        <span class="focus-input100-1"></span>
-                        <span class="focus-input100-2"></span>
-                      </div>
-                      <div class="wrap-input100 validate-input" data-validate = "Message is required">
-                        <textarea class="input100" name="message" placeholder="Your Message"></textarea>
-                        <span class="focus-input100-1"></span>
-                        <span class="focus-input100-2"></span>
-                      </div>
-                      <div class="contact100-form-checkbox">
-                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="copy-mail">
-                        <label class="label-checkbox100" for="ckb1">
-                          Send copy to my-email
-                        </label>
-                      </div>
-                      <div class="container-contact100-form-btn">
-                        <button class="contact100-form-btn">
-                          Send Email
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              
-                <div id="dropDownSelect1"></div>
-           <div class="flex-wrapper">
-             <h2>KONTAKT</h2>
-              <div class="flex-item">
-                <i class="fas fa-envelope-square fa-2x"></i>
-              <h4>blatruc@gmail.com</h4>
-            </div>
-            <div class="flex-item">
-                <i class="fas fa-phone-square-alt fa-2x"></i>
-              <h4>060000620</h4>
-            </div>
-            <div class="flex-item">
-                <i class="fab fa-facebook-square fa-2x"></i>
-                <a href="www.facebook.com"><h4>www.facebook.com</h4></a>
-            </div>
-            <div class="flex-item">
-                <i class="fab fa-instagram fa-2x"></i>
-              <a href="instagram.com"><h4>instagram.com</h4></a>
-            </div>
+      <div class="container">
+        <form class="main-form">
+        <h3>
+          kontakt forma
+        </h3>
+        <input type="text" name="name" placeholder="Ime"> 
+        <input type="text" name="email" placeholder="E-mail">
+        <textarea name="message" placeholder="Poruka"></textarea>
+        <div class="flex-item">
+          <div class="checkbox-wrapper">
+            <label>
+              <input type="checkbox" name="checkbox" >         
+                <i class="fas fa-check fa-1x"></i>
+            </label>
           </div>
+          <p>Posalji kopiju na moj email</p>
         </div>
-        
-        <div class="copyright py-2">
-          <div class="container">
+        <input type="submit" value="Posalji Poruku" class="btn">
+        </form>              
+        <div class="flex-wrapper">
+          <h3>kontakt informacije</h3>
+          <div class="flex-item">
+            <i class="fas fa-envelope-square fa-2x"></i>
+          <h4>blatruc@gmail.com</h4>
+        </div>
+        <div class="flex-item">
+            <i class="fas fa-phone-square-alt fa-2x"></i>
+          <h4>060000620</h4>
+        </div>
+        <div class="flex-item">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <a href="www.facebook.com"><h4>www.facebook.com</h4></a>
+        </div>
+        <div class="flex-item">
+            <i class="fab fa-instagram fa-2x"></i>
+          <a href="instagram.com"><h4>instagram.com</h4></a>
+        </div>
+        </div>
+      </div>
+      <div class="copyright py-2">
+        <div class="container">
             <p>© 2019 Mortal Kombat bend. Nikakva prava ne zadržavamo, ništa ne priznajemo.</p>
             <div class="social-pos">
-            <i class="fab fa-facebook-square fa-2x social-pos"></i>
-            <i class="fas fa-envelope-square fa-2x social-pos"></i>
-            <i class="fab fa-instagram fa-2x social-pos"></i>
+              <i class="fab fa-facebook-square fa-2x social-pos"></i>
+              <i class="fas fa-envelope-square fa-2x social-pos"></i>
+              <i class="fab fa-instagram fa-2x"></i>
             </div>
-          </div>
         </div>
-      </footer>
+      </div>
+    </footer>
     <!-- Scripts -->
     <!-- Data Aos Init -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
