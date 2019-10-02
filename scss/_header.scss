@@ -53,6 +53,34 @@ header {
                 }
             }
 
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                li {
+                    border-bottom: 1px dotted $background-overlay;
+
+                    a {
+                        padding: .5rem 0;
+                        display: flex;
+                        justify-content: space-between;
+                        text-decoration: none;
+                        color: $background-overlay;
+                    }
+
+                    a:hover {
+                        color: $primary-text-white;
+                        transition: $transition-ease-in-2;
+                    }
+                }
+
+                li:last-child {
+                    border-bottom: none;
+                }
+            }
+
             #menu-icon {
                 color: $primary-text-white;
             }
