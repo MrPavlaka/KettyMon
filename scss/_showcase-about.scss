@@ -1,0 +1,59 @@
+.showcase-about-bg {
+    background: url('../img/showcase-about-bg.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+#showcase-about {
+    padding: 1rem 0;
+
+    .container {
+        padding: 2rem 0;
+
+        .flex-wrapper {
+
+            &>.flex-item:first-child {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .flex-item:last-child {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+#users {
+    .container {
+
+        .flex-wrapper {
+
+            .flex-item {
+                text-align: center;
+                margin-bottom: 2rem;
+                border-bottom: 2px dotted $primary-color;
+
+                .wrapper {
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .btn {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .flex-item:last-child {
+                margin-bottom: none;
+                border-bottom: none;
+            }
+        }
+    }
+}
