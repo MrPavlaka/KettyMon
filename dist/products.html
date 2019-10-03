@@ -95,6 +95,7 @@
           </li>
           <li onclick="rolne()"><h5>Rolne</h5></li>
         </ul>
+        <!-- gallery 1 -->
         <div class="gallery-wrapper" id="1">
           <h2>Jastuci</h2>
           <div class="wrapper">
@@ -194,7 +195,57 @@
         </div>
       </div>
     </section>
-
+    <!--Section 2-materials-->
+    
+    <section id="showcase-materials">
+        <div class="container">
+              <ul class="gallery-nav">
+                  <li onclick="material1()">
+                    <h5>Pamuk</h5>
+                  </li>
+                  <li onclick="material2()">
+                    <h5>Plis</h5>
+                  </li>
+                  <li onclick="material3()">
+                    <h5>Poliester-pamuk</h5></li>
+                </ul>
+                <!-- gallery mat -->
+        <div class="gallery-wrapper" id="4">
+            <h2>MATERIJALI</h2>
+            <div class="wrapper">
+              <div class="slider-wrapper">
+                <img
+                  src="img/gallery/jastuci/jastuk1.jpg"
+                  alt=""
+                  class="slider-item"
+                />
+              </div>
+              <div class="slider-wrapper">
+                <img
+                  src="img/gallery/jastuci/jastuk2.jpg"
+                  alt=""
+                  class="slider-item"
+                />
+              </div>
+              <div class="slider-wrapper">
+                <img
+                  src="img/gallery/jastuci/jastuk3.jpg"
+                  alt=""
+                  class="slider-item"
+                />
+              </div>
+            </div>
+            <div class="flex-wrapper">
+              <div class="btn-circle" onclick="plusDivs(-1)">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="btn-circle" onclick="plusDivs(1)">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
     <!-- Footer -->
     <footer class="py-2">
       <div class="container">
@@ -382,6 +433,31 @@
           e[z].style.display = "none";
         }
         e[slideIndex1 - 1].style.display = "block";
+      }
+
+
+        // Slider Material
+        var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slider-item");
+        var dots = document.getElementsByClassName("btn-circle");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
       }
     </script>
   </body>
