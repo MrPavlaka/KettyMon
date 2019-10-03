@@ -40,14 +40,14 @@
           <li onclick="toggleDropdown()">
             <a class="active">Proizvodi<i class="fas fa-chevron-down"></i></a>
             <ul id="main-menu-dropdown" style="display:none">
-              <li><a href="">Galerija</a></li>
-              <li><a href="">Materijali</a></li>
-              <li><a href="">Dimenzije</a></li>
-              <li><a href="">Kreiram po svom ukusu</a></li>
+              <li><a href="products.html">Galerija</a></li>
+              <li><a href="products.html">Materijali</a></li>
+              <li><a href="products.html">Dimenzije</a></li>
+              <li><a href="products.html">Kreiram po svom ukusu</a></li>
             </ul>
           </li>
           <li>
-            <a href=""
+            <a href="reference.html"
               >Reference
               <!-- <i class="fas fa-chevron-right"></i> -->
             </a>
@@ -301,34 +301,9 @@
         </div>
       </div>
     </footer>
+
     <!-- Scripts -->
-    <!-- Data Aos Init -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
     <script>
-      // AOS INIT
-      AOS.init();
-
-      // Toggle Menu
-      function toggleMenu() {
-        var x = document.getElementById("main-menu");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-
-      // Menu Dropdown
-      function toggleDropdown() {
-        var d = document.getElementById("main-menu-dropdown");
-        if (d.style.display === "none") {
-          d.style.display = "block";
-        } else {
-          d.style.display = "none";
-        }
-      }
-
       // SLIDERI SCRIPTS
 
       // Gallery MENU Dropdown
@@ -396,6 +371,7 @@
       function plusDivs1(n) {
         showDivs1((slideIndex1 += n));
       }
+
       function showDivs1(n) {
         var z;
         var e = document.getElementsByClassName("slider-item1");
@@ -419,6 +395,7 @@
       function plusDivs2(n) {
         showDivs2((slideIndex1 += n));
       }
+
       function showDivs2(n) {
         var z;
         var e = document.getElementsByClassName("slider-item2");
@@ -459,6 +436,11 @@
         }
         x[slideIndex - 1].style.display = "block";
       }
+    </script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
