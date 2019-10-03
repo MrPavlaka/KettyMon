@@ -406,6 +406,9 @@ body {
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth; }
 
+.primary-text {
+  color: #b67d30; }
+
 .container {
   width: 80%;
   max-width: 1920px;
@@ -522,7 +525,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(51, 51, 51, 0.8);
+    background: rgba(51, 51, 51, 0.2);
     z-index: -2; }
   footer .container {
     height: 100%;
@@ -846,3 +849,24 @@ header {
       #showcase-products .container .gallery-wrapper .flex-wrapper .circle-active {
         border: inherit;
         background-color: #b67d30; }
+
+.showcase-contact-bg {
+  background: url("../img/locationfooter.jpg") !important;
+  background-attachment: fixed !important;
+  background-position: left;
+  background-size: cover !important;
+  background-repeat: no-repeat; }
+  .showcase-contact-bg::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: none !important;
+    z-index: -1; }
+  .showcase-contact-bg .container h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.5; }
