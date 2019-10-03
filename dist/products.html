@@ -48,7 +48,6 @@
         <nav>
           <div class="logo">
               <img src="img/logo.png" alt="">
-
           </div>
           <i
             class="fas fa-bars fa-2x"
@@ -63,6 +62,59 @@
     <section id="showcase">
       <div class="container">
         <h1>Proizvodi</h1>
+      </div>
+    </section>
+
+    <!-- Section 2: Showcase Content Gallery -->
+    <section id="showcase-products">
+      <div class="container">
+        <div class="gallery-wrapper">
+          <h2>Krevetici</h2>
+          <div class="wrapper">
+            <div class="slider-wrapper">
+              <img src="img/gallery/jastuci/jastuk1.jpg" alt="" class="slider-item">
+            </div>
+            <div class="slider-wrapper">
+              <img src="img/gallery/jastuci/jastuk2.jpg" alt="" class="slider-item">
+            </div>
+            <div class="slider-wrapper">
+              <img src="img/gallery/jastuci/jastuk3.jpg" alt="" class="slider-item">
+            </div>
+          </div>
+          <div class="flex-wrapper">
+            <div class="btn-circle" onclick="plusDivs(-1)">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="btn-circle"
+            onclick="plusDivs(1)">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        </div>
+        <!-- Gallery 2 -->
+        <div class="gallery-wrapper">
+            <h2>Krevetici</h2>
+            <div class="wrapper">
+              <div class="slider-wrapper">
+                <img src="img/gallery/jastuci/jastuk1.jpg" alt="" class="slider-item">
+              </div>
+              <div class="slider-wrapper">
+                <img src="img/gallery/jastuci/jastuk2.jpg" alt="" class="slider-item">
+              </div>
+              <div class="slider-wrapper">
+                <img src="img/gallery/jastuci/jastuk3.jpg" alt="" class="slider-item">
+              </div>
+            </div>
+            <div class="flex-wrapper">
+              <div class="btn-circle" onclick="plusDivs(-1)">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="btn-circle"
+              onclick="plusDivs(1)">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          </div>
       </div>
     </section>
 
@@ -121,11 +173,12 @@
     <!-- Scripts -->
     <!-- Data Aos Init -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
+      // AOS INIT
       AOS.init();
-    </script>
-    <!-- Toggle Menu -->
-    <script>
+
+      // Toggle Menu
       function toggleMenu() {
         var x = document.getElementById("main-menu");
         if (x.style.display === "block") {
@@ -134,6 +187,35 @@
           x.style.display = "block";
         }
       }
+
+      // Slider
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      // function currentDiv(n) {
+      //   showDivs(slideIndex = n);
+      // }
+
+      function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("slider-item");
+      var dots = document.getElementsByClassName("btn-circle");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" circle-active", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      // dots[slideIndex-1].className += " w3-red";
+    }
     </script>
+    
   </body>
 </html>
