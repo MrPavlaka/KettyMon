@@ -3,6 +3,10 @@ body {
     scroll-behavior: smooth;
 }
 
+.primary-text {
+    color: $secondary-color;
+}
+
 .container {
     width: 80%;
     max-width: 1920px;

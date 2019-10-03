@@ -1,0 +1,27 @@
+.showcase-contact-bg {
+    background: url("../img/locationfooter.jpg") !important;
+    background-attachment: fixed !important;
+    background-position: left;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: none !important;
+        z-index: -1;
+    }
+
+    .container {
+        h1 {
+            color: $primary-text-white;
+            text-align: center;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+    }
+}
