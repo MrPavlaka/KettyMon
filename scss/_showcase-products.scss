@@ -72,8 +72,11 @@
         .circle-active {
           border: inherit;
           background-color: $secondary-color;
-        }
-      }
+        }      
     }
-  }
 }
+
+#showcase-materials {
+    background: $primary-background;
+}
+
