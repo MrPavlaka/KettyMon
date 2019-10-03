@@ -788,7 +788,9 @@ header {
   background: #eeeeee; }
   #showcase-products .container .wrapper .slider-wrapper {
     width: 100%; }
-    #showcase-products .container .wrapper .slider-wrapper .slider-item {
+    #showcase-products .container .wrapper .slider-wrapper .slider-item,
+    #showcase-products .container .wrapper .slider-wrapper .slider-item1,
+    #showcase-products .container .wrapper .slider-wrapper .slider-item2 {
       width: 100%; }
   #showcase-products .container .gallery-wrapper {
     display: flex;
@@ -803,7 +805,9 @@ header {
       width: fit-content;
       justify-content: space-between;
       padding: 2rem 0; }
-      #showcase-products .container .gallery-wrapper .flex-wrapper .btn-circle {
+      #showcase-products .container .gallery-wrapper .flex-wrapper .btn-circle,
+      #showcase-products .container .gallery-wrapper .flex-wrapper .btn-circle1,
+      #showcase-products .container .gallery-wrapper .flex-wrapper .btn-circle2 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -812,7 +816,9 @@ header {
         margin: 0 .5rem;
         border-radius: 50%;
         border: 2px solid #b67d30; }
-        #showcase-products .container .gallery-wrapper .flex-wrapper .btn-circle i {
+        #showcase-products .container .gallery-wrapper .flex-wrapper .btn-circle i,
+        #showcase-products .container .gallery-wrapper .flex-wrapper .btn-circle1 i,
+        #showcase-products .container .gallery-wrapper .flex-wrapper .btn-circle2 i {
           color: #b67d30; }
       #showcase-products .container .gallery-wrapper .flex-wrapper .circle-active {
         border: inherit;
