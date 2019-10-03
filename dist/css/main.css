@@ -659,7 +659,15 @@ footer {
     flex-direction: column;
     justify-content: space-between; }
     #main-menu .container ul li {
+      position: relative;
       border-bottom: 1px dotted rgba(238, 238, 238, 0.9); }
+      #main-menu .container ul li ul {
+        flex-direction: column;
+        background: #333333;
+        z-index: 3;
+        padding-left: 1rem; }
+        #main-menu .container ul li ul li {
+          padding-left: .5rem; }
       #main-menu .container ul li a {
         padding: .5rem 0;
         display: flex;
@@ -786,6 +794,29 @@ header {
 
 #showcase-products {
   background: #eeeeee; }
+  #showcase-products .container .gallery-nav {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 1rem;
+    margin-bottom: 2rem; }
+    #showcase-products .container .gallery-nav li {
+      padding: 1rem;
+      padding-bottom: .5rem;
+      border-bottom: 2px solid #333333;
+      cursor: pointer; }
+      #showcase-products .container .gallery-nav li h5 {
+        color: #333333;
+        font-weight: bold;
+        font-size: 1.25rem; }
+    #showcase-products .container .gallery-nav .li-active h5 {
+      color: #b67d30; }
+    #showcase-products .container .gallery-nav .li-active {
+      border-bottom: 4px solid #b67d30; }
+    #showcase-products .container .gallery-nav .li-not-active h5 {
+      color: #333333; }
+    #showcase-products .container .gallery-nav .li-not-active {
+      border-bottom: none; }
   #showcase-products .container .wrapper .slider-wrapper {
     width: 100%; }
     #showcase-products .container .wrapper .slider-wrapper .slider-item,
