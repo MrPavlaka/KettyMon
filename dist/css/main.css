@@ -783,3 +783,37 @@ header {
 #users .container .flex-wrapper .flex-item:last-child {
   margin-bottom: none;
   border-bottom: none; }
+
+#showcase-products {
+  background: #eeeeee; }
+  #showcase-products .container .wrapper .slider-wrapper {
+    width: 100%; }
+    #showcase-products .container .wrapper .slider-wrapper .slider-item {
+      width: 100%; }
+  #showcase-products .container .gallery-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    #showcase-products .container .gallery-wrapper h2 {
+      padding: 2rem; }
+    #showcase-products .container .gallery-wrapper .flex-wrapper {
+      display: flex;
+      margin: 0 auto;
+      width: fit-content;
+      justify-content: space-between;
+      padding: 2rem 0; }
+      #showcase-products .container .gallery-wrapper .flex-wrapper .btn-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin: 0 .5rem;
+        border-radius: 50%;
+        border: 2px solid #b67d30; }
+        #showcase-products .container .gallery-wrapper .flex-wrapper .btn-circle i {
+          color: #b67d30; }
+      #showcase-products .container .gallery-wrapper .flex-wrapper .circle-active {
+        border: inherit;
+        background-color: #b67d30; }
