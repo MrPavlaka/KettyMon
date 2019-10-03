@@ -2,6 +2,37 @@
     background: $primary-background;
 
     .container {
+
+        .gallery-nav {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            padding-top: 1rem;
+            margin-bottom: 2rem;
+
+
+            li {
+                padding: 1rem;
+                padding-bottom: .5rem;
+                border-bottom: 2px solid $primary-color;
+                cursor: pointer;
+
+                h5 {
+                    color: $primary-color;
+                    font-weight: bold;
+                    font-size: 1.25rem;
+                }
+            }
+
+            .li-active h5 {
+                color: $secondary-color;
+            }
+
+            .li-active {
+                border-bottom: 4px solid $secondary-color;
+            }
+        }
+
         .wrapper {
             .slider-wrapper {
                 width: 100%;

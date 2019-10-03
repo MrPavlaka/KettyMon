@@ -23,31 +23,49 @@
   <body>
     <!-- Header -->
     <div id="main-menu" style="display: none">
-        <div class="container">
-          <ul>
-            <li>
-              <a href="index.html">Pocetna<i class="fas fa-chevron-right"></i></a>
-            </li>
-            <li>
-              <a href="about.html">O nama<i class="fas fa-chevron-right"></i></i></a>
-            </li>
-            <li>
-              <a href="products.html" class="active">Proizvodi<i class="fas fa-chevron-right"></i></a>
-            </li>
-            <li>
-              <a href="reference.html">Reference<i class="fas fa-chevron-right"></i></a>
-            </li>
-            <li>
-              <a href="contact.html">Kontakt<i class="fas fa-chevron-right"></i></a>
-            </li>
-          </ul>
-        </div>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="index.html"
+              >Pocetna
+              <!-- <i class="fas fa-chevron-right"></i> -->
+            </a>
+          </li>
+          <li>
+            <a href="about.html"
+              >O nama
+              <!-- <i class="fas fa-chevron-right"></i> -->
+            </a>
+          </li>
+          <li onclick="toggleDropdown()">
+            <a class="active">Proizvodi<i class="fas fa-chevron-down"></i></a>
+            <ul id="main-menu-dropdown" style="display:none">
+              <li><a href="">Galerija</a></li>
+              <li><a href="">Materijali</a></li>
+              <li><a href="">Dimenzije</a></li>
+              <li><a href="">Kreiram po svom ukusu</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=""
+              >Reference
+              <!-- <i class="fas fa-chevron-right"></i> -->
+            </a>
+          </li>
+          <li>
+            <a href="contact.html"
+              >Kontakt
+              <!-- <i class="fas fa-chevron-right"></i> -->
+            </a>
+          </li>
+        </ul>
       </div>
+    </div>
     <header class="py-1">
       <div class="container">
         <nav>
           <div class="logo">
-              <img src="img/logo.png" alt="">
+            <img src="img/logo.png" alt="" />
           </div>
           <i
             class="fas fa-bars fa-2x"
@@ -68,129 +86,177 @@
     <!-- Section 2: Showcase Content Gallery -->
     <section id="showcase-products">
       <div class="container">
-        <div class="gallery-wrapper">
+        <ul class="gallery-nav">
+          <li
+            onclick="jastuci();          active();
+          "
+            class="li-active"
+          >
+            <h5>Jastuci</h5>
+          </li>
+          <li
+            onclick="kreveti();          active();
+          "
+          >
+            <h5>Kreveti</h5>
+          </li>
+          <li onclick="rolne()"><h5>Rolne</h5></li>
+        </ul>
+        <div class="gallery-wrapper" id="1">
           <h2>Jastuci</h2>
           <div class="wrapper">
             <div class="slider-wrapper">
-              <img src="img/gallery/jastuci/jastuk1.jpg" alt="" class="slider-item">
+              <img
+                src="img/gallery/jastuci/jastuk1.jpg"
+                alt=""
+                class="slider-item"
+              />
             </div>
             <div class="slider-wrapper">
-              <img src="img/gallery/jastuci/jastuk2.jpg" alt="" class="slider-item">
+              <img
+                src="img/gallery/jastuci/jastuk2.jpg"
+                alt=""
+                class="slider-item"
+              />
             </div>
             <div class="slider-wrapper">
-              <img src="img/gallery/jastuci/jastuk3.jpg" alt="" class="slider-item">
+              <img
+                src="img/gallery/jastuci/jastuk3.jpg"
+                alt=""
+                class="slider-item"
+              />
             </div>
           </div>
           <div class="flex-wrapper">
             <div class="btn-circle" onclick="plusDivs(-1)">
               <i class="fas fa-chevron-left"></i>
             </div>
-            <div class="btn-circle"
-            onclick="plusDivs(1)">
-            <i class="fas fa-chevron-right"></i>
+            <div class="btn-circle" onclick="plusDivs(1)">
+              <i class="fas fa-chevron-right"></i>
+            </div>
           </div>
-        </div>
         </div>
         <!-- Gallery 2 -->
-        <div class="gallery-wrapper">
-            <h2>Kreveti</h2>
-            <div class="wrapper">
-              <div class="slider-wrapper">
-                <img src="img/gallery/krevetici/krevet1.jpg" alt="" class="slider-item1">
-              </div>
-              <div class="slider-wrapper">
-                <img src="img/gallery/krevetici/krevet2.jpg" alt="" class="slider-item1">
-              </div>
-              <div class="slider-wrapper">
-                <img src="img/gallery/krevetici/krevet3.jpg" alt="" class="slider-item1">
-              </div>
+        <div class="gallery-wrapper" id="2" style="display:none">
+          <h2>Kreveti</h2>
+          <div class="wrapper">
+            <div class="slider-wrapper">
+              <img
+                src="img/gallery/krevetici/krevet1.jpg"
+                alt=""
+                class="slider-item1"
+              />
             </div>
-            <div class="flex-wrapper">
-              <div class="btn-circle1" onclick="plusDivs1(-1)">
-                <i class="fas fa-chevron-left"></i>
-              </div>
-              <div class="btn-circle1"
-              onclick="plusDivs1(1)">
+            <div class="slider-wrapper">
+              <img
+                src="img/gallery/krevetici/krevet2.jpg"
+                alt=""
+                class="slider-item1"
+              />
+            </div>
+            <div class="slider-wrapper">
+              <img
+                src="img/gallery/krevetici/krevet3.jpg"
+                alt=""
+                class="slider-item1"
+              />
+            </div>
+          </div>
+          <div class="flex-wrapper">
+            <div class="btn-circle1" onclick="plusDivs1(-1)">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="btn-circle1" onclick="plusDivs1(1)">
               <i class="fas fa-chevron-right"></i>
             </div>
           </div>
-          </div>
+        </div>
         <!-- Gallery 3 -->
-        <div class="gallery-wrapper">
-            <h2>Rolne</h2>
-            <div class="wrapper">
-              <div class="slider-wrapper">
-                <img src="img/gallery/rolne/rolna1.jpg" alt="" class="slider-item2">
-              </div>
-              <div class="slider-wrapper">
-                <img src="img/gallery/rolne/rolna2.jpg" alt="" class="slider-item2">
-              </div>
+        <div class="gallery-wrapper" id="3" style="display:none">
+          <h2>Rolne</h2>
+          <div class="wrapper">
+            <div class="slider-wrapper">
+              <img
+                src="img/gallery/rolne/rolna1.jpg"
+                alt=""
+                class="slider-item2"
+              />
             </div>
-            <div class="flex-wrapper">
-              <div class="btn-circle2" onclick="plusDivs2(-1)">
-                <i class="fas fa-chevron-left"></i>
-              </div>
-              <div class="btn-circle2"
-              onclick="plusDivs2(1)">
+            <div class="slider-wrapper">
+              <img
+                src="img/gallery/rolne/rolna2.jpg"
+                alt=""
+                class="slider-item2"
+              />
+            </div>
+          </div>
+          <div class="flex-wrapper">
+            <div class="btn-circle2" onclick="plusDivs2(-1)">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="btn-circle2" onclick="plusDivs2(1)">
               <i class="fas fa-chevron-right"></i>
             </div>
           </div>
-          </div>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="py-2">
+      <div class="container">
+        <form class="main-form">
+          <h3>
+            kontakt forma
+          </h3>
+          <input type="text" name="name" placeholder="Ime" />
+          <input type="text" name="email" placeholder="E-mail" />
+          <textarea name="message" placeholder="Poruka"></textarea>
+          <div class="flex-item">
+            <div class="checkbox-wrapper">
+              <label>
+                <input type="checkbox" name="checkbox" />
+                <i class="fas fa-check fa-1x"></i>
+              </label>
+            </div>
+            <p>Posalji kopiju na moj email</p>
+          </div>
+          <input type="submit" value="Posalji Poruku" class="btn" />
+        </form>
+        <div class="flex-wrapper">
+          <h3>kontakt informacije</h3>
+          <div class="flex-item">
+            <i class="fas fa-envelope-square fa-2x"></i>
+            <h4>blatruc@gmail.com</h4>
+          </div>
+          <div class="flex-item">
+            <i class="fas fa-phone-square-alt fa-2x"></i>
+            <h4>060000620</h4>
+          </div>
+          <div class="flex-item">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <a href="www.facebook.com"><h4>www.facebook.com</h4></a>
+          </div>
+          <div class="flex-item">
+            <i class="fab fa-instagram fa-2x"></i>
+            <a href="instagram.com"><h4>instagram.com</h4></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright py-2">
         <div class="container">
-          <form class="main-form">
-            <h3>
-              kontakt forma
-            </h3>
-            <input type="text" name="name" placeholder="Ime"> 
-            <input type="text" name="email" placeholder="E-mail">
-            <textarea name="message" placeholder="Poruka"></textarea>
-            <div class="flex-item">
-              <div class="checkbox-wrapper">
-                <label>
-                  <input type="checkbox" name="checkbox" >         
-                    <i class="fas fa-check fa-1x"></i>
-                </label>
-              </div>
-              <p>Posalji kopiju na moj email</p>
-            </div>
-            <input type="submit" value="Posalji Poruku" class="btn">
-            </form>              
-            <div class="flex-wrapper">
-                <h3>kontakt informacije</h3>
-              <div class="flex-item">
-                <i class="fas fa-envelope-square fa-2x"></i>
-              <h4>blatruc@gmail.com</h4>
-            </div>
-            <div class="flex-item">
-                <i class="fas fa-phone-square-alt fa-2x"></i>
-              <h4>060000620</h4>
-            </div>
-            <div class="flex-item">
-                <i class="fab fa-facebook-square fa-2x"></i>
-                <a href="www.facebook.com"><h4>www.facebook.com</h4></a>
-            </div>
-            <div class="flex-item">
-                <i class="fab fa-instagram fa-2x"></i>
-              <a href="instagram.com"><h4>instagram.com</h4></a>
-            </div>
-            </div>
+          <p>
+            © 2019 Mortal Kombat bend. Nikakva prava ne zadržavamo, ništa ne
+            priznajemo.
+          </p>
+          <div class="social-pos">
+            <i class="fab fa-facebook-square fa-2x social-pos"></i>
+            <i class="fas fa-envelope-square fa-2x social-pos"></i>
+            <i class="fab fa-instagram fa-2x"></i>
           </div>
-          <div class="copyright py-2">
-            <div class="container">
-                <p>© 2019 Mortal Kombat bend. Nikakva prava ne zadržavamo, ništa ne priznajemo.</p>
-                <div class="social-pos">
-                  <i class="fab fa-facebook-square fa-2x social-pos"></i>
-                  <i class="fas fa-envelope-square fa-2x social-pos"></i>
-                  <i class="fab fa-instagram fa-2x"></i>
-                </div>
-            </div>
-          </div>
-        </footer>
+        </div>
+      </div>
+    </footer>
     <!-- Scripts -->
     <!-- Data Aos Init -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -209,64 +275,127 @@
         }
       }
 
+      // Menu Dropdown
+      function toggleDropdown() {
+        var d = document.getElementById("main-menu-dropdown");
+        if (d.style.display === "none") {
+          d.style.display = "block";
+        } else {
+          d.style.display = "none";
+        }
+      }
+
+      // SLIDERI SCRIPTS
+
+      // Gallery MENU Dropdown
+      // Active LI implementiranje(pleme)
+      function active() {
+        var l = document.querySelector("li");
+        l.classList.add = "li-active";
+      }
+
+      function jastuci() {
+        var d = document.getElementById("1");
+        if (d.style.display === "none") {
+          d.style.display = "flex";
+          var c = document.getElementById("2");
+          c.style.display = "none";
+          var z = document.getElementById("3");
+          z.style.display = "none";
+        }
+      }
+
+      function kreveti() {
+        var d = document.getElementById("2");
+        if (d.style.display === "none") {
+          d.style.display = "flex";
+          var c = document.getElementById("1");
+          c.style.display = "none";
+          var z = document.getElementById("3");
+          z.style.display = "none";
+        }
+      }
+
+      function rolne() {
+        var d = document.getElementById("3");
+        if (d.style.display === "none") {
+          d.style.display = "flex";
+          var c = document.getElementById("1");
+          var z = document.getElementById("2");
+          c.style.display = "none";
+          z.style.display = "none";
+        }
+      }
+
       // Slider Jastuci
       var slideIndex = 1;
       showDivs(slideIndex);
 
       function plusDivs(n) {
-        showDivs(slideIndex += n);
+        showDivs((slideIndex += n));
       }
 
       function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("slider-item");
-      var dots = document.getElementsByClassName("btn-circle");
-      if (n > x.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+        var i;
+        var x = document.getElementsByClassName("slider-item");
+        var dots = document.getElementsByClassName("btn-circle");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
       }
-      x[slideIndex-1].style.display = "block";  
-    }
 
-    // Slider Kreveti
-    var slideIndex1 = 1;
+      // Slider Kreveti
+      var slideIndex1 = 1;
       showDivs1(slideIndex);
 
       function plusDivs1(n) {
-        showDivs1(slideIndex1 += n);
+        showDivs1((slideIndex1 += n));
       }
       function showDivs1(n) {
-      var z;
-      var e = document.getElementsByClassName("slider-item1");
-      var dots1 = document.getElementsByClassName("btn-circle1");
-      if (n > e.length) {slideIndex1 = 1}    
-      if (n < 1) {slideIndex1 = e.length}
-      for (z = 0; z < e.length; z++) {
-        e[z].style.display = "none";  
+        var z;
+        var e = document.getElementsByClassName("slider-item1");
+        var dots1 = document.getElementsByClassName("btn-circle1");
+        if (n > e.length) {
+          slideIndex1 = 1;
+        }
+        if (n < 1) {
+          slideIndex1 = e.length;
+        }
+        for (z = 0; z < e.length; z++) {
+          e[z].style.display = "none";
+        }
+        e[slideIndex1 - 1].style.display = "block";
       }
-      e[slideIndex1-1].style.display = "block";  
-    }
 
-    // Slider Ролне
-    var slideIndex1 = 1;
+      // Slider Ролне
+      var slideIndex1 = 1;
       showDivs2(slideIndex);
 
       function plusDivs2(n) {
-        showDivs2(slideIndex1 += n);
+        showDivs2((slideIndex1 += n));
       }
       function showDivs2(n) {
-      var z;
-      var e = document.getElementsByClassName("slider-item2");
-      var dots1 = document.getElementsByClassName("btn-circle2");
-      if (n > e.length) {slideIndex1 = 1}    
-      if (n < 1) {slideIndex1 = e.length}
-      for (z = 0; z < e.length; z++) {
-        e[z].style.display = "none";  
+        var z;
+        var e = document.getElementsByClassName("slider-item2");
+        var dots1 = document.getElementsByClassName("btn-circle2");
+        if (n > e.length) {
+          slideIndex1 = 1;
+        }
+        if (n < 1) {
+          slideIndex1 = e.length;
+        }
+        for (z = 0; z < e.length; z++) {
+          e[z].style.display = "none";
+        }
+        e[slideIndex1 - 1].style.display = "block";
       }
-      e[slideIndex1-1].style.display = "block";  
-    }
     </script>
-    
   </body>
 </html>
