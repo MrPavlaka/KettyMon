@@ -69,7 +69,7 @@
     <section id="showcase-products">
       <div class="container">
         <div class="gallery-wrapper">
-          <h2>Krevetici</h2>
+          <h2>Jastuci</h2>
           <div class="wrapper">
             <div class="slider-wrapper">
               <img src="img/gallery/jastuci/jastuk1.jpg" alt="" class="slider-item">
@@ -93,24 +93,45 @@
         </div>
         <!-- Gallery 2 -->
         <div class="gallery-wrapper">
-            <h2>Krevetici</h2>
+            <h2>Kreveti</h2>
             <div class="wrapper">
               <div class="slider-wrapper">
-                <img src="img/gallery/jastuci/jastuk1.jpg" alt="" class="slider-item">
+                <img src="img/gallery/krevetici/krevet1.jpg" alt="" class="slider-item1">
               </div>
               <div class="slider-wrapper">
-                <img src="img/gallery/jastuci/jastuk2.jpg" alt="" class="slider-item">
+                <img src="img/gallery/krevetici/krevet2.jpg" alt="" class="slider-item1">
               </div>
               <div class="slider-wrapper">
-                <img src="img/gallery/jastuci/jastuk3.jpg" alt="" class="slider-item">
+                <img src="img/gallery/krevetici/krevet3.jpg" alt="" class="slider-item1">
               </div>
             </div>
             <div class="flex-wrapper">
-              <div class="btn-circle" onclick="plusDivs(-1)">
+              <div class="btn-circle1" onclick="plusDivs1(-1)">
                 <i class="fas fa-chevron-left"></i>
               </div>
-              <div class="btn-circle"
-              onclick="plusDivs(1)">
+              <div class="btn-circle1"
+              onclick="plusDivs1(1)">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          </div>
+        <!-- Gallery 3 -->
+        <div class="gallery-wrapper">
+            <h2>Rolne</h2>
+            <div class="wrapper">
+              <div class="slider-wrapper">
+                <img src="img/gallery/rolne/rolna1.jpg" alt="" class="slider-item2">
+              </div>
+              <div class="slider-wrapper">
+                <img src="img/gallery/rolne/rolna2.jpg" alt="" class="slider-item2">
+              </div>
+            </div>
+            <div class="flex-wrapper">
+              <div class="btn-circle2" onclick="plusDivs2(-1)">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="btn-circle2"
+              onclick="plusDivs2(1)">
               <i class="fas fa-chevron-right"></i>
             </div>
           </div>
@@ -188,17 +209,13 @@
         }
       }
 
-      // Slider
+      // Slider Jastuci
       var slideIndex = 1;
       showDivs(slideIndex);
 
       function plusDivs(n) {
         showDivs(slideIndex += n);
       }
-
-      // function currentDiv(n) {
-      //   showDivs(slideIndex = n);
-      // }
 
       function showDivs(n) {
       var i;
@@ -209,11 +226,45 @@
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";  
       }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" circle-active", "");
-      }
       x[slideIndex-1].style.display = "block";  
-      // dots[slideIndex-1].className += " w3-red";
+    }
+
+    // Slider Kreveti
+    var slideIndex1 = 1;
+      showDivs1(slideIndex);
+
+      function plusDivs1(n) {
+        showDivs1(slideIndex1 += n);
+      }
+      function showDivs1(n) {
+      var z;
+      var e = document.getElementsByClassName("slider-item1");
+      var dots1 = document.getElementsByClassName("btn-circle1");
+      if (n > e.length) {slideIndex1 = 1}    
+      if (n < 1) {slideIndex1 = e.length}
+      for (z = 0; z < e.length; z++) {
+        e[z].style.display = "none";  
+      }
+      e[slideIndex1-1].style.display = "block";  
+    }
+
+    // Slider Ролне
+    var slideIndex1 = 1;
+      showDivs2(slideIndex);
+
+      function plusDivs2(n) {
+        showDivs2(slideIndex1 += n);
+      }
+      function showDivs2(n) {
+      var z;
+      var e = document.getElementsByClassName("slider-item2");
+      var dots1 = document.getElementsByClassName("btn-circle2");
+      if (n > e.length) {slideIndex1 = 1}    
+      if (n < 1) {slideIndex1 = e.length}
+      for (z = 0; z < e.length; z++) {
+        e[z].style.display = "none";  
+      }
+      e[slideIndex1-1].style.display = "block";  
     }
     </script>
     

@@ -1,11 +1,14 @@
 #showcase-products {
     background: $primary-background;
+
     .container {
         .wrapper {
             .slider-wrapper {
                 width: 100%;
 
-                .slider-item {
+                .slider-item,
+                .slider-item1,
+                .slider-item2 {
                     width: 100%;
                 }
             }
@@ -28,7 +31,9 @@
                 justify-content: space-between;
                 padding: 2rem 0;
 
-                .btn-circle {
+                .btn-circle,
+                .btn-circle1,
+                .btn-circle2 {
                     display: flex;
                     justify-content: center;
                     align-items: center;
