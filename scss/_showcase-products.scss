@@ -31,6 +31,14 @@
             .li-active {
                 border-bottom: 4px solid $secondary-color;
             }
+
+            .li-not-active h5 {
+                color: $primary-color;
+            }
+
+            .li-not-active {
+                border-bottom: none;
+            }
         }
 
         .wrapper {

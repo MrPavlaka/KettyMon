@@ -813,6 +813,10 @@ header {
       color: #b67d30; }
     #showcase-products .container .gallery-nav .li-active {
       border-bottom: 4px solid #b67d30; }
+    #showcase-products .container .gallery-nav .li-not-active h5 {
+      color: #333333; }
+    #showcase-products .container .gallery-nav .li-not-active {
+      border-bottom: none; }
   #showcase-products .container .wrapper .slider-wrapper {
     width: 100%; }
     #showcase-products .container .wrapper .slider-wrapper .slider-item,

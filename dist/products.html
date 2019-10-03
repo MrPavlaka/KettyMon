@@ -87,17 +87,10 @@
     <section id="showcase-products">
       <div class="container">
         <ul class="gallery-nav">
-          <li
-            onclick="jastuci();          active();
-          "
-            class="li-active"
-          >
+          <li onclick="jastuci()">
             <h5>Jastuci</h5>
           </li>
-          <li
-            onclick="kreveti();          active();
-          "
-          >
+          <li onclick="kreveti()">
             <h5>Kreveti</h5>
           </li>
           <li onclick="rolne()"><h5>Rolne</h5></li>
@@ -288,12 +281,6 @@
       // SLIDERI SCRIPTS
 
       // Gallery MENU Dropdown
-      // Active LI implementiranje(pleme)
-      function active() {
-        var l = document.querySelector("li");
-        l.classList.add = "li-active";
-      }
-
       function jastuci() {
         var d = document.getElementById("1");
         if (d.style.display === "none") {
