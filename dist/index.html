@@ -26,44 +26,55 @@
         <div class="container">
           <ul>
             <li>
-              <a href="index.html" class="active">Pocetna<i class="fas fa-chevron-right"></i></a>
+              <a href="index.html" class="active"
+                >Pocetna
+                <!-- <i class="fas fa-chevron-right"></i> -->
+              </a>
             </li>
             <li>
-              <a href="about.html">O nama<i class="fas fa-chevron-right"></i></i></a>
+              <a href="about.html"
+                >O nama
+                <!-- <i class="fas fa-chevron-right"></i> -->
+              </a>
+            </li>
+            <li onclick="toggleDropdown()">
+              <a hre="products.html">Proizvodi<i class="fas fa-chevron-down"></i></a>
+              <ul id="main-menu-dropdown" style="display:none">
+                <li><a href="products.html/#showcase-products">Galerija</a></li>
+                <li><a href="products.html">Materijali</a></li>
+                <li><a href="products.html">Dimenzije</a></li>
+                <li><a href="products.html">Kreiram po svom ukusu</a></li>
+              </ul>
             </li>
             <li>
-              <a href="products.html">Proizvodi<i class="fas fa-chevron-right"></i></a>
+              <a href="reference.html"
+                >Reference
+                <!-- <i class="fas fa-chevron-right"></i> -->
+              </a>
             </li>
             <li>
-              <a href="reference.html">Reference<i class="fas fa-chevron-right"></i></a>
-            </li>
-            <li>
-              <a href="contact.html">Kontakt<i class="fas fa-chevron-right"></i></a>
+              <a href="contact.html"
+                >Kontakt
+                <!-- <i class="fas fa-chevron-right"></i> -->
+              </a>
             </li>
           </ul>
         </div>
       </div>
-    <header class="py-1">
-      <div class="container">
-        <nav>
-          <ul style="display: none">
-            <li><a href="index.html" class="active">Pocetna</a></li>
-            <li><a href="about.html">O nama</a></li>
-            <li><a href="products.html">Proizvodi</a></li>
-            <li><a href="reference.html">Reference</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-          </ul>
-          <div class="logo">
-            <img src="img/logo.png" alt="KettyMon Logo Official">
-          </div>
-          <i
-            class="fas fa-bars fa-2x"
-            id="menu-icon"
-            onclick="toggleMenu();"
-          ></i>
-        </nav>
-      </div>
-    </header>
+      <header class="py-1">
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <img src="img/logo.png" alt="" />
+            </div>
+            <i
+              class="fas fa-bars fa-2x"
+              id="menu-icon"
+              onclick="toggleMenu();"
+            ></i>
+          </nav>
+        </div>
+      </header>
 
     <!-- Section 1: Showcase -->
     <section id="showcase">
@@ -205,22 +216,12 @@
         </div>
       </div>
     </footer>
+    
     <!-- Scripts -->
-    <!-- Data Aos Init -->
+    <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
-    </script>
-    <!-- Toggle Menu -->
-    <script>
-      function toggleMenu() {
-        var x = document.getElementById("main-menu");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
+        AOS.init();
+      </script>
   </body>
 </html>

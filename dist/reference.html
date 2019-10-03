@@ -23,31 +23,50 @@
   <body>
     <!-- Header -->
     <div id="main-menu" style="display: none">
-        <div class="container">
-          <ul>
-            <li>
-              <a href="index.html">Pocetna<i class="fas fa-chevron-right"></i></a>
-            </li>
-            <li>
-              <a href="about.html">O nama<i class="fas fa-chevron-right"></i></i></a>
-            </li>
-            <li>
-              <a href="products.html">Proizvodi<i class="fas fa-chevron-right"></i></a>
-            </li>
-            <li>
-              <a href="reference.html" class="active">Reference<i class="fas fa-chevron-right"></i></a>
-            </li>
-            <li>
-              <a href="contact.html">Kontakt<i class="fas fa-chevron-right"></i></a>
-            </li>
-          </ul>
-        </div>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="index.html"
+              >Pocetna
+              <!-- <i class="fas fa-chevron-right"></i> -->
+            </a>
+          </li>
+          <li>
+            <a href="about.html"
+              >O nama
+              <!-- <i class="fas fa-chevron-right"></i> -->
+            </a>
+          </li>
+          <li onclick="toggleDropdown()">
+            <a hre="products.html"
+              >Proizvodi<i class="fas fa-chevron-down"></i
+            ></a>
+            <ul id="main-menu-dropdown" style="display:none">
+              <li><a href="products.html/#showcase-products">Galerija</a></li>
+              <li><a href="products.html">Materijali</a></li>
+              <li><a href="products.html">Dimenzije</a></li>
+              <li><a href="products.html">Kreiram po svom ukusu</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="reference.html" class="active"
+              >Reference
+              <!-- <i class="fas fa-chevron-right"></i> -->
+            </a>
+          </li>
+          <li>
+            <a href="contact.html"
+              >Kontakt
+              <!-- <i class="fas fa-chevron-right"></i> -->
+            </a>
+          </li>
+        </ul>
       </div>
+    </div>
     <header class="py-1">
       <div class="container">
         <nav>
-          <div class="logo">            <img src="img/logo.png" alt="">
-          </div>
+          <div class="logo"><img src="img/logo.png" alt="" /></div>
           <i
             class="fas fa-bars fa-2x"
             id="menu-icon"
@@ -66,72 +85,65 @@
 
     <!-- Footer -->
     <footer class="py-2">
+      <div class="container">
+        <form class="main-form">
+          <h3>
+            kontakt forma
+          </h3>
+          <input type="text" name="name" placeholder="Ime" />
+          <input type="text" name="email" placeholder="E-mail" />
+          <textarea name="message" placeholder="Poruka"></textarea>
+          <div class="flex-item">
+            <div class="checkbox-wrapper">
+              <label>
+                <input type="checkbox" name="checkbox" />
+                <i class="fas fa-check fa-1x"></i>
+              </label>
+            </div>
+            <p>Posalji kopiju na moj email</p>
+          </div>
+          <input type="submit" value="Posalji Poruku" class="btn" />
+        </form>
+        <div class="flex-wrapper">
+          <h3>kontakt informacije</h3>
+          <div class="flex-item">
+            <i class="fas fa-envelope-square fa-2x"></i>
+            <h4>blatruc@gmail.com</h4>
+          </div>
+          <div class="flex-item">
+            <i class="fas fa-phone-square-alt fa-2x"></i>
+            <h4>060000620</h4>
+          </div>
+          <div class="flex-item">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <a href="www.facebook.com"><h4>www.facebook.com</h4></a>
+          </div>
+          <div class="flex-item">
+            <i class="fab fa-instagram fa-2x"></i>
+            <a href="instagram.com"><h4>instagram.com</h4></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright py-2">
         <div class="container">
-          <form class="main-form">
-            <h3>
-              kontakt forma
-            </h3>
-            <input type="text" name="name" placeholder="Ime"> 
-            <input type="text" name="email" placeholder="E-mail">
-            <textarea name="message" placeholder="Poruka"></textarea>
-            <div class="flex-item">
-              <div class="checkbox-wrapper">
-                <label>
-                  <input type="checkbox" name="checkbox" >         
-                    <i class="fas fa-check fa-1x"></i>
-                </label>
-              </div>
-              <p>Posalji kopiju na moj email</p>
-            </div>
-            <input type="submit" value="Posalji Poruku" class="btn">
-            </form>              
-            <div class="flex-wrapper">
-                <h3>kontakt informacije</h3>
-              <div class="flex-item">
-                <i class="fas fa-envelope-square fa-2x"></i>
-              <h4>blatruc@gmail.com</h4>
-            </div>
-            <div class="flex-item">
-                <i class="fas fa-phone-square-alt fa-2x"></i>
-              <h4>060000620</h4>
-            </div>
-            <div class="flex-item">
-                <i class="fab fa-facebook-square fa-2x"></i>
-                <a href="www.facebook.com"><h4>www.facebook.com</h4></a>
-            </div>
-            <div class="flex-item">
-                <i class="fab fa-instagram fa-2x"></i>
-              <a href="instagram.com"><h4>instagram.com</h4></a>
-            </div>
-            </div>
+          <p>
+            © 2019 Mortal Kombat bend. Nikakva prava ne zadržavamo, ništa ne
+            priznajemo.
+          </p>
+          <div class="social-pos">
+            <i class="fab fa-facebook-square fa-2x social-pos"></i>
+            <i class="fas fa-envelope-square fa-2x social-pos"></i>
+            <i class="fab fa-instagram fa-2x"></i>
           </div>
-          <div class="copyright py-2">
-            <div class="container">
-                <p>© 2019 Mortal Kombat bend. Nikakva prava ne zadržavamo, ništa ne priznajemo.</p>
-                <div class="social-pos">
-                  <i class="fab fa-facebook-square fa-2x social-pos"></i>
-                  <i class="fas fa-envelope-square fa-2x social-pos"></i>
-                  <i class="fab fa-instagram fa-2x"></i>
-                </div>
-            </div>
-          </div>
-        </footer>
+        </div>
+      </div>
+    </footer>
+
     <!-- Scripts -->
-    <!-- Data Aos Init -->
+    <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-    <!-- Toggle Menu -->
-    <script>
-      function toggleMenu() {
-        var x = document.getElementById("main-menu");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
     </script>
   </body>
 </html>

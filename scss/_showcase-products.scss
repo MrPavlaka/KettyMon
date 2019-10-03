@@ -1,97 +1,79 @@
 #showcase-products {
-    background: $primary-background;
+  background: $primary-background;
 
-    .container {
+  .container {
+    .gallery-nav {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      padding-top: 1rem;
+      margin-bottom: 2rem;
 
-        .gallery-nav {
-            display: flex;
-            margin: auto;
-            justify-content: center;
-            padding-top: 1rem;
-            margin-bottom: 2rem;
+      li {
+        padding: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid $primary-color;
+        cursor: pointer;
 
-
-            li {
-                padding: 1rem;
-                padding-bottom: .5rem;
-                border-bottom: 2px solid $primary-color;
-                cursor: pointer;
-
-                h5 {
-                    color: $primary-color;
-                    font-weight: bold;
-                    font-size: 1.25rem;
-                }
-            }
-
-            .li-active h5 {
-                color: $secondary-color;
-            }
-
-            .li-active {
-                border-bottom: 4px solid $secondary-color;
-            }
-
-            .li-not-active h5 {
-                color: $primary-color;
-            }
-
-            .li-not-active {
-                border-bottom: none;
-            }
+        h5 {
+          color: $primary-color;
+          font-weight: bold;
+          font-size: 1.25rem;
         }
-
-        .wrapper {
-            .slider-wrapper {
-                width: 100%;
-
-                .slider-item,
-                .slider-item1,
-                .slider-item2 {
-                    width: 100%;
-                }
-            }
-        }
-
-        .gallery-wrapper {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-
-            h2 {
-                padding: 2rem;
-            }
-
-            .flex-wrapper {
-                display: flex;
-                margin: 0 auto;
-                width: fit-content;
-                justify-content: space-between;
-                padding: 2rem 0;
-
-                .btn-circle,
-                .btn-circle1,
-                .btn-circle2 {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 30px;
-                    height: 30px;
-                    margin: 0 .5rem;
-                    border-radius: 50%;
-                    border: 2px solid $secondary-color;
-
-                    i {
-                        color: $secondary-color;
-                    }
-                }
-
-                .circle-active {
-                    border: inherit;
-                    background-color: $secondary-color;
-                }
-            }
-        }
+      }
     }
+
+    .wrapper {
+      .slider-wrapper {
+        width: 100%;
+
+        .slider-item,
+        .slider-item1,
+        .slider-item2 {
+          width: 100%;
+        }
+      }
+    }
+
+    .gallery-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        padding: 2rem;
+      }
+
+      .flex-wrapper {
+        display: flex;
+        margin: 0 auto;
+        width: fit-content;
+        justify-content: space-between;
+        padding: 2rem 0;
+
+        .btn-circle,
+        .btn-circle1,
+        .btn-circle2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          margin: 0 0.5rem;
+          border-radius: 50%;
+          border: 2px solid $secondary-color;
+
+          i {
+            color: $secondary-color;
+          }
+        }
+
+        .circle-active {
+          border: inherit;
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
 }
