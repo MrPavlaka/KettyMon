@@ -850,6 +850,9 @@ header {
         border: inherit;
         background-color: #b67d30; }
 
+#showcase-materials {
+  background: #eeeeee; }
+
 .showcase-contact-bg {
   background: url("../img/locationfooter.jpg") !important;
   background-attachment: fixed !important;
@@ -870,3 +873,33 @@ header {
     text-align: center;
     margin-bottom: 2rem;
     line-height: 1.5; }
+
+#app {
+  background: #eeeeee; }
+  #app .container .app-body {
+    position: relative;
+    height: 300px;
+    padding-bottom: 3rem;
+    z-index: 1; }
+    #app .container .app-body img {
+      background: red;
+      width: 100%; }
+    #app .container .app-body .app-upper-holder {
+      background: grey;
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+      #app .container .app-body .app-upper-holder img {
+        width: 100%; }
+    #app .container .app-body .app-lower-holder {
+      min-height: fit-content;
+      border-top: 2px solid red;
+      z-index: 2;
+      position: absolute;
+      width: 100%;
+      margin-top: 2rem;
+      bottom: 0; }
+      #app .container .app-body .app-lower-holder img {
+        width: 100%;
+        background: green; }

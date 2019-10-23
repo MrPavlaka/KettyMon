@@ -1,0 +1,51 @@
+#app {
+    background: $primary-background;
+
+    .container {
+
+        .app-wrapper {
+
+            .app-menu {}
+        }
+
+        .app-body {
+            position: relative;
+            height: 300px;
+            padding-bottom: 3rem;
+            z-index: 1;
+
+            img {
+                background: red;
+                width: 100%;
+            }
+
+            .app-upper-holder {
+                background: grey;
+                z-index: 3;
+                position: absolute;
+                top: 0;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .app-lower-holder {
+                min-height: fit-content;
+                border-top: 2px solid red;
+                z-index: 2;
+                position: absolute;
+                width: 100%;
+                margin-top: 2rem;
+                bottom: 0;
+                // opacity: 0.2;
+
+                img {
+                    width: 100%;
+                    background: green;
+                }
+            }
+        }
+    }
+}
