@@ -1,15 +1,19 @@
 {
-  "name": "constant_use",
+  "name": "ketty_mon",
   "version": "1.0.0",
-  "description": "",
+  "description": "KettyMon sajt opis",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "private": true
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "npm": "^6.12.0"
   }
 }
