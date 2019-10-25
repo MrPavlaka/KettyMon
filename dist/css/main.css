@@ -801,14 +801,14 @@ header {
       justify-content: space-around; }
 
 #vision {
-  height: 50vh;
   background: url("../img/showcase-about-parallax.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  padding: 4rem 0; }
   #vision .container {
     display: flex;
     height: 100%;
@@ -817,7 +817,22 @@ header {
     align-items: center; }
     #vision .container h2 {
       color: #fff;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 2rem; }
+    #vision .container .flex-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      padding: 1.2rem;
+      border-radius: 15px;
+      background: rgba(51, 51, 51, 0.8); }
+      #vision .container .flex-wrapper p {
+        color: #fff;
+        line-height: 1.5; }
+      #vision .container .flex-wrapper p:first-child {
+        margin-bottom: 1.2rem; }
   #vision::after {
     content: '';
     background: rgba(51, 51, 51, 0.5);
@@ -883,8 +898,121 @@ header {
         border: inherit;
         background-color: #b67d30; }
 
-#showcase-materials {
+#products-content {
   background: #eeeeee; }
+  #products-content .container > p {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding: 2rem 0;
+    line-height: 1.5; }
+  #products-content .container .flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem; }
+    #products-content .container .flex-wrapper .flex-item:first-child {
+      display: flex;
+      flex-direction: column; }
+      #products-content .container .flex-wrapper .flex-item:first-child h3 {
+        margin-bottom: 1.5rem;
+        text-align: center; }
+      #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%; }
+        #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper p {
+          text-align: center;
+          line-height: 1.3; }
+        #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper label {
+          display: inline-block;
+          width: fit-content;
+          padding: 1.2rem;
+          padding-top: 0;
+          cursor: pointer; }
+          #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper label p {
+            display: none; }
+          #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper label input[type="checkbox"] {
+            opacity: 0; }
+          #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper label span {
+            border-bottom: 1px solid #b67d30;
+            padding-bottom: 0.5rem;
+            font-weight: 900; }
+          #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper label i {
+            margin-left: 0.5rem;
+            padding-bottom: 0.5rem; }
+          #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper label input[type="checkbox"],
+          #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper label span,
+          #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper label i {
+            margin-top: 1.2rem; }
+          #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper label input[type="checkbox"]:checked {
+            display: none; }
+            #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper label input[type="checkbox"]:checked ~ i,
+            #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper label input[type="checkbox"]:checked ~ span {
+              display: none; }
+            #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper label input[type="checkbox"]:checked ~ p {
+              transform: translateX(-300px);
+              animation: p-pop forwards ease-in 0.5s;
+              display: block; }
+
+@keyframes p-pop {
+  to {
+    transform: translateX(0); } }
+
+@keyframes lead-drop {
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }
+        #products-content .container .flex-wrapper .flex-item:first-child .text-wrapper .btn {
+          width: fit-content;
+          margin: 0 auto 1.5rem auto; }
+    #products-content .container .flex-wrapper .flex-item:last-child {
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      padding: 2rem 0; }
+      #products-content .container .flex-wrapper .flex-item:last-child .box {
+        min-width: 50px;
+        min-height: 50px;
+        margin: 0.3rem;
+        box-shadow: 5px 3px 3px rgba(51, 51, 51, 0.5); }
+
+#products-gallery {
+  background: #eeeeee;
+  overflow: hidden; }
+  #products-gallery .container {
+    transform: rotate(90deg);
+    border: 1px solid red;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto; }
+    #products-gallery .container .gallery {
+      transform: rotate(-90deg);
+      text-align: left;
+      width: 100vw;
+      min-height: 100%;
+      border: 2px dotted yellow;
+      overflow: scroll; }
+      #products-gallery .container .gallery h3 {
+        text-align: center; }
+      #products-gallery .container .gallery .flex-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        height: 100%;
+        justify-content: space-between; }
+        #products-gallery .container .gallery .flex-wrapper .flex-item {
+          width: fit-content;
+          height: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden; }
+          #products-gallery .container .gallery .flex-wrapper .flex-item img {
+            width: 300px; }
 
 .showcase-contact-bg {
   background: url("../img/locationfooter.jpg") !important;
